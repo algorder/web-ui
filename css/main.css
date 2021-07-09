@@ -1,0 +1,696 @@
+body {
+  padding-top: 5rem;
+  background: rgb(23, 23 ,25) !important;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  #mainLogo {
+    display: none;
+  }
+
+#accountModalBody {
+    height: 480px !important;
+}
+
+  .orderRow {
+    height: 240px !important;
+    max-width: 490px !important;
+  }
+
+  .operatorSelect {
+    margin-top: 20px;
+    width: 140px !important;
+
+  }
+
+.arrow {
+  display: none;
+}
+.selectOperatorText{
+  font-family: 'Poppins'; font-size: 17px !important;
+}
+
+.selectText{
+  font-family: 'Poppins'; font-size: 18px;
+}
+
+.select{
+    width: 120px !important;
+}
+
+  .orderValue {
+    width: 120px !important;
+  }
+
+  #amountSplitter {
+    margin-left: 0px !important;
+    margin-top: 20px;
+    padding-left: 0px !important;
+    width: 120px !important;
+  }
+
+  #fromSymbolSplitter {
+    margin-top: 20px;
+  }
+
+  #fromSymbolLabel {
+    display: none;
+  }
+
+  #exchangeButton {
+    margin-left: 20px;
+  }
+
+  #saveOrderButton {
+    max-width: 490px !important;
+  }
+
+  .splitterPre {
+    display: none;
+  }
+  .tipView {
+    max-width: 490px !important;
+    height: 160px !important;
+  }
+
+  .order {
+    width: 100% !important;
+    max-width: 500px !important;
+  }
+  
+}
+
+.nav-link {
+	color : rgb(170, 175, 198);
+	font-family: 'Poppins'; font-size: 22px;
+}
+
+.yy {
+  color : rgb(255, 189, 0);
+}
+
+.nav-link:hover {
+  color : rgb(255, 189, 0);
+}
+
+.active .nav-link{
+	color : rgb(255, 189, 0);
+}
+
+a{
+  color : rgb(255, 189, 0);
+}
+
+a:hover{
+  color : rgb(255, 189, 0);
+}
+
+
+.fixed-top-10 {
+    position: fixed;
+    top: 10;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar {
+	height: 72px;
+}
+
+.navbar-brand img {
+	height: 40px;
+}
+
+.navbar-brand {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+.order {
+	width: 835px;
+	margin-top: 80px;
+}
+
+.orderRow {
+	height: 136px;
+	border-radius:8px;
+  	border: 1px solid #2a2d3c;
+  	padding-left: 24px;
+  	padding-right: 24px;
+  	padding-top: 12px;
+  	padding-bottom: 12px;
+  	margin-bottom: 20px;
+}
+
+.modal-body .orderRow {
+  padding: 0px;
+  border: none;
+  height: 400px;
+}
+
+.orderButtonRow {
+	height: 56;
+	border-radius:8px;
+  	
+  	padding-left: 12px;
+  	padding-right: 12px;
+  	padding-top: 12px;
+  	padding-bottom: 12px;
+  	margin-bottom: 20px;
+}
+
+.orderButton {
+	height: 56px;
+	border-radius:12px;
+  	background-color: rgb(255, 189, 0);
+  	color: black;
+  	width: 100%;
+  	outline: none;
+  	border: 0px;
+  	font-family: 'Poppins'; font-size: 18px;
+	font-weight: 800;
+}
+
+.orderButton:hover {
+	background-color: rgb(255, 189, 0);
+
+}
+
+.accountButton {
+  height: 30px;
+  border-radius:12px;
+  background-color: rgb(255, 189, 0);
+  color: black;
+  width: 100%;
+  outline: none;
+  border: 0px;
+  font-family: 'Poppins'; font-size: 14px;
+  font-weight: 800;
+}
+
+.accountButton:hover {
+  background-color: rgb(255, 189, 0);
+
+}
+
+.accountAddressButton {
+  height: 30px;
+  border-radius:12px;
+  background-color: rgb(255, 189, 0);
+  color: black;
+  width: 100px;
+  outline: none;
+      border: 0px;
+
+  font-family: 'Poppins'; font-size: 16px;
+  font-weight: 800;
+}
+
+.accountAddressButton:hover {
+  background-color: rgb(255, 189, 0);
+
+}
+
+
+.account-bar {
+	margin-left: 12px;
+}
+
+.navButton2 {
+	
+	height: 56px;
+	border-radius:12px;
+  	background-color: #222531;
+  	color: rgb(255, 189, 0);
+  	width: 100%;
+  	outline: none;
+  	border: 0px;
+  	font-family: 'Poppins'; font-size: 16px;
+	font-weight: 600;
+}
+
+.navButton2:hover {
+	background-color: #222531;
+	color: rgb(255, 189, 0);
+	
+}
+
+.navButton {
+	height: 56px;
+	border-radius:12px;
+  	background-color: rgb(255, 189, 0);
+  	color: black;
+  	width: 100%;
+  	outline: none;
+  	border: 0px;
+  	font-family: 'Poppins'; font-size: 16px;
+	font-weight: 600;
+}
+
+.navButton:hover {
+	background-color: rgb(255, 189, 0);
+	color: black;
+	
+}
+
+.orderRowTitle{
+	font-family: 'Poppins'; font-size: 18px;
+	font-weight: 600;
+	color: rgb(255, 189, 0);
+
+	height: 32px;
+}
+
+.select{
+	border-radius:8px;
+  	border: 1px solid #2a2d3c;
+  	width: 136px;
+  	height: 64px;
+  	padding: 12px;
+}
+
+.select:hover{
+  	background-color : #2a2d3c;
+}
+
+.operatorSelect:hover{
+  	background-color : #2a2d3c;
+}
+
+#splitter1 {
+  display: none;
+}
+
+.tokenLogo{
+	border-radius:12px;
+  	width: 24px;
+  	height: 24px;
+}
+
+.select .arrow{
+  	height: 16px;
+  	float: right;
+    position: relative;
+    top: 7px;
+}
+
+.orderRow .row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+.splitter {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 15px;
+}
+
+.splitterPre {
+	padding-left: 0px;
+	padding-right: 10px;
+	padding-top: 15px;
+}
+
+
+
+.splitter span {
+	font-family: 'Poppins'; font-size: 18px;
+	font-weight: 600;
+	color: white;
+}
+
+.splitterPre span {
+	font-family: 'Poppins'; font-size: 18px;
+	font-weight: 600;
+	color: white;
+}
+
+.selectText{
+	font-family: 'Poppins'; font-size: 18px;
+	font-weight: 600;
+	color: white;
+    position: relative;
+    top: 2px;
+    left: 8px;
+}
+
+.text2 {
+  font-family: 'Poppins'; font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.text3 {
+  font-family: 'Poppins'; font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.mr10 {
+  margin-right: : 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.m0 {
+  margin: 0px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.orderRow .operatorSelect{
+	border-radius:8px;
+  	border: 1px solid #2a2d3c;
+  	width: 200px;
+  	height: 64px;
+  	padding: 12px;
+}
+
+.tipView {
+  background-color: rgb(32, 42, 62)
+}
+
+.tipView h5 {
+  font-family: 'Poppins'; font-size: 18px;
+  font-weight: 600;
+  color: #5F97FF;
+}
+
+.tipView span {
+  font-family: 'Poppins'; font-size: 14px;
+  font-weight: 400;
+  color: #5F97FF;
+}
+
+.orderRow .operatorSelect .arrow{
+  	height: 16px;
+  	float: right;
+    position: relative;
+    top: 7px;
+}
+
+.orderRow .searchBar{
+  border-radius:8px;
+    border: 1px solid #2a2d3c;
+    width: 200px;
+    height: 64px;
+    padding: 12px;
+    width: 100%;
+}
+
+.orderRow .searchBar .orderValue{
+    font-family: 'Poppins'; font-size: 14px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: white;
+}
+
+.subscriptionBox{
+  height: 94px;
+  border-radius:8px;
+  border: 1px solid #2a2d3c;
+  padding: 12px;
+}
+
+.subscriptionBox:hover{
+  height: 94px;
+  border-radius:8px;
+  border: 1px solid rgb(255, 189, 0);
+  padding: 12px;
+}
+
+.boxSelected{
+  height: 94px;
+  border-radius:8px;
+  border: 1px solid rgb(255, 189, 0);
+  padding: 12px;
+}
+
+.middleBox {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.boxText1 {
+  font-family: 'Poppins'; font-size: 12px;
+  color: #ABAFC4;
+  font-weight: 400;
+  margin-bottom: 15px;
+
+}
+
+.selectOperatorText{
+	font-family: 'Poppins'; font-size: 18px;
+	font-weight: 600;
+  	color : rgb(255, 189, 0);
+    position: relative;
+    top: 2px;
+    left: 8px;
+}
+
+.orderValue {
+	background: transparent;
+    border: none;
+    font-family: 'Poppins'; font-size: 24px;
+	font-weight: 600;
+	color: #888daa;
+	outline: none;
+	text-align: right; 
+	width: 176px;
+}
+
+.orderValue:focus {
+	outline: none;
+}
+
+.orderItem {
+	padding: 0px;
+}
+
+.modal .modal-dialog .modal-content{
+  background-color: rgb(23, 23, 26);
+}
+
+.modal .modal-dialog .modal-header{
+  border: 0px;
+}
+
+
+.modal .modal-dialog .modal-header .close{
+  text-shadow: none;
+  color: white;
+  opacity: 1;
+}
+
+
+.modal .modal-dialog .modal-footer{
+  border: 0px;
+}
+
+.modal-title {
+font-family: 'Poppins'; font-size: 18px;
+color:white;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #888daa;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #888daa;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #888daa;
+}
+
+
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+#modalTokenList{
+    height: 360px;
+    overflow-y: auto;
+}
+
+#modalTokenList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#modalTokenList ul li{
+    height: 56px;
+}
+
+#modalTokenList ul li:hover{
+    background-color : #2a2d3c;
+
+}
+
+#modalExchangeList{
+    height: 300px;
+    overflow-y: auto;
+}
+
+#modalExchangeList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#modalExchangeList ul li{
+    height: 56px;
+}
+
+#modalExchangeList ul li:hover{
+    background-color : #2a2d3c;
+
+}
+
+#modalOperatorList{
+    height: 300px;
+    overflow-y: auto;
+}
+
+#modalOperatorList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#modalOperatorList ul li{
+    height: 56px;
+}
+
+#modalOperatorList ul li:hover{
+    background-color : #2a2d3c;
+
+}
+
+
+
+.tokenValue {
+  float:right; padding-right:10px;
+}
+
+.exchangeSelect {
+      width: 200px !important;
+    margin-bottom: 20px;
+    margin-left: 317px;
+}
+
+.accountTable th {
+  color: rgb(170, 175, 198);
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 56px;
+  font-family: 'Poppins'; font-size: 18px;
+  font-weight: 800;
+}
+
+
+.accountTable td {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 56px;
+  font-family: 'Poppins'; font-size: 16px;
+  font-weight: 600;
+}
+
+.accountTable, .accountTable td, .accountTable th {
+}
+
+.accountTable {
+  width: 100%;
+
+  border-collapse: collapse;
+  border-radius: 8px;
+}
+
+.accountTable {
+    border-collapse:separate;
+    border:solid #2a2d3c 1px;
+    border-radius:8px;
+    -moz-border-radius:8px;
+}
+
+td, th {
+    border-left:solid #2a2d3c 1px;
+    border-top:solid #2a2d3c 1px;
+}
+
+th {
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
+
+.delete {
+  height: 24px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.gc {
+  color: #76E268 !important;
+}
+
+.rc {
+  color: #F44336 !important;
+}
+
+.ac {
+  color: rgb(78, 150, 255) !important;
+}
+
+.bd-example-modal-lg .modal-dialog{
+    display: table;
+    position: relative;
+    margin: 0 auto;
+    top: calc(50% - 24px);
+  }
+
+  .bd-example-modal-lg .modal-dialog .modal-content{
+    background-color: transparent;
+    border: none;
+  }

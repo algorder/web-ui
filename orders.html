@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 , minimum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Algorder | Orders</title>
+ 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <!-- Custom styles for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="css/main.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md fixed-top ">
+     <a class="navbar-brand" href="index.html" id="mainLogo"><img src="assets/nav-logo.png"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="assets/sideMenu.png" style="height:35px;"/></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarsExampleDefault" style="background-color: rgb(23,23,25);">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Trade</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="orders.html">Orders</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="account.html">Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="docs.html">Docs</a>
+          </li>
+          
+          
+        </ul>
+        
+      </div>
+
+      <div class="" >
+        <ul class="navbar-nav" style="padding-top: 10px;">
+          <li class="nav-item active  account-bar"  id="accountView" style="display:none;">
+            <button type="button" class="btn btn-primary navButton" id="accountButton">0x1F12....D8</button>
+          </li>
+          <li class="nav-item  account-bar" id="connectWalletView"  style="display:none;">
+            <button type="button" class="btn btn-primary navButton2" id="connectMetamaskButton">Connect to a wallet</button>
+          </li>
+          
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+
+    <main role="main" class="container order">
+      
+      <div class="row">
+        <h5 class="orderRowTitle">ACTIVE ORDERS</h5>
+      </div>
+      <div class="row mb20">
+        <table class="accountTable">
+            <thead>
+              <th>ID</th>
+              <th>Condition</th>
+              <th>Order</th>
+              <th>Created</th>
+              <th></th>
+            </thead>
+            <tbody id="activeOrdersTable">
+              
+            </tbody>
+          </table>
+      </div>
+
+      <div class="row mt20">
+        <h5 class="orderRowTitle">HISTORY</h5>
+      </div>
+      <div class=" row">
+        <table class="accountTable">
+            <thead>
+              <th>ID</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>TX</th>
+            </thead>
+            <tbody id="historyTable">
+            
+              
+            </tbody>
+          </table>
+      </div>
+
+     
+
+      
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/dist/web3.min.js"></script>
+<script src="js/loader.js" ></script>
+    <script src="js/tokenlist.js" ></script>
+    <script src="js/createAccountContract.js" ></script>
+    <script src="js/algorderAccountContract.js" ></script>
+    <script src="js/algorderContract.js" ></script>
+
+    <script src="js/wallet.js" ></script>
+    <script src="js/orders.js" ></script>
+
+    
+
+    <div class="modal fade bd-example-modal-lg" data-backdrop="static" data-keyboard="false" tabindex="-1" id="loader">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content" style="width: 48px">
+            <span class="fa fa-spinner fa-spin fa-3x" style="color:rgb(255, 189, 0)"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

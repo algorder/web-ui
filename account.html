@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 , minimum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Algorder | Account</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+ 
+    <!-- Custom styles for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="css/main.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+
+
+<!-- Create Account Modal -->
+<div class="modal fade" id="createAccountModal" tabindex="-1" role="dialog" aria-labelledby="createAccountLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="createAccountLabel">Become an Early Adapter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class=" orderRow" id="accountModalBody" style="height:480px;">
+          <div class="row">
+            <span class="text2 mb8">ALGORDER ACCOUNT</span>
+          </div>
+          <div class="row mb8">
+            <span class="text3 mb8">You need to have an Algorder Account in order to save orders. It is a one time action. As we announced we will be distributing %85 of $ALGOR tokens as AIRDROP to our first 850 users. $ALGOR token will go live on July 15, 2021. Once you create an account, if you're in the first 850 users, you will become eligible for the airdrop too. We are currenty in beta phase. We are really excited to get feedback from you once you tried Algorder. Please share your experience with us.</span>
+          </div>
+          <div class="row">
+            <div class="subscriptionBox boxSelected" id="box1" style="height:70px;">
+              <h5 class="boxText1">ALGORDER ACCOUNT</h5>
+              <h5 class="text3" id="accountFee">1 AVAX</h5>
+            </div>
+          </div>
+          <div class="row mt20">
+            <span class="boxText1">*Why there is a fee for creating account? We will be equally distributing %85 of $ALGOR tokens as AIRDROP to our first 850 users. We don't want for a bot to come and create douzens of accounts for free and earn majority of $ALGOR tokens. For this reason we decide to go with a symbolic fee during our Beta phase. Please check our <a href="https://medium.com/algorder/about-algorder-team-some-disclosures-and-announcements-dfe79027cbf7" >Medium post</a> for more details. </span>
+          </div>
+          <div class="row">
+          <button type="button" class="btn btn-primary orderButton" id="becomeMemberButton">CREATE ACCOUNT</button>
+          </div>
+        </div>
+
+        
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Withdraw Modal -->
+<div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-labelledby="withdrawLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="withdrawLabel">Withdraw PEFI</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class=" orderRow" style="height: 180px;">
+          <div class="row">
+            <div class="mr10" style="width: 130px;">
+              <span class="modal-title">Amount:</span></br>
+              <button type="button" class="btn btn-primary accountButton" style="width: 60px;" onclick="maxTapped();">MAX</button>
+            </div>
+            
+            <div class="operatorSelect" style="width: 290px;">
+              <input class="orderValue" id="withdrawAmountInput" type="number" value="0" style="width: 270px;"/>
+            </div>
+            <div class="splitter" style="padding-right: 0px;">
+              <img class="tokenLogo" id="withdrawTokenLogo" src="https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xe896CDeaAC9615145c0cA09C8Cd5C25bced6384c/logo.png" />
+            </div>
+          </div>
+          <div class="row mt20">
+            <span class="boxText1" id="withdrawBalanceLabel">Your PEFI Balance: 18.23 PEFI </span>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-primary orderButton" onclick="withdrawButtonTapped();">WITHDRAW</button>
+          </div>
+
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Deposit Modal -->
+<div class="modal fade" id="depositModal" tabindex="-1" role="dialog" aria-labelledby="depositLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="depositLabel">Deposit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class=" orderRow" style="height: 200px;">
+          <div class="row">
+            <div class="mr10" style="width: 100%">
+              <span class="modal-title">You may send AVAX or any token to your account's C-Chain address:</span></br>
+            </div>
+            
+           
+          </div>
+
+          <div class="row mt20">
+            <button type="button" class="btn btn-primary accountAddressButton" id="contractAddress" onclick="copyAddress();" data-toggle="tooltip" data-placement="bottom" title="Click to copy" style="width: 100%; height: 56px;"></button>
+            <input style="width: 100px; height: 10px; position: absolute; top: -1000px;" type="text" id="copyInput"/>
+          </div>
+          <div class="row mt20">
+            <span class="boxText1">*Above address is the address of your accounts smart contract. Funds on this contract can only be controlled by you. No one (including us) can withdraw your funds. You can check it on the <a id="explorerLink2" href="#">Avalanche Explorer</a></span>
+          </div>
+          
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="tokenModal" tabindex="-1" role="dialog" aria-labelledby="tokenModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tokenModalLabel">Select Token</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="overflow:hidden;">
+        <div class=" orderRow">
+          <div class="row">
+            <div class="searchBar">
+              <input class="orderValue" type="text" value="" id="tokenSearchInput" onpaste="tokenSearchChanged();"  oninput="tokenSearchChanged();" placeholder="Search name or paste address"/>
+            </div>
+          </div>
+
+          <div class="row" id="modalTokenList">
+            <div style="width: 100%; padding-top: 16px;">
+              <ul id="tokenSelectList">
+                <li> 
+                  <img class="tokenLogo" src="https://app.pangolin.exchange/static/media/avalanche_token_round.3e178e42.png" />
+                  <span class="selectText">AVAX</span>
+                  <span class="selectText tokenValue" style="float:right;">0</span>
+                </li>
+                <li> 
+                  <img class="tokenLogo" src="https://app.pangolin.exchange/static/media/avalanche_token_round.3e178e42.png" />
+                  <span class="selectText">AVAX</span>
+                  <span class="selectText tokenValue" style="float:right;">0</span>
+                </li>
+                <li> 
+                  <img class="tokenLogo" src="https://app.pangolin.exchange/static/media/avalanche_token_round.3e178e42.png" />
+                  <span class="selectText">AVAX</span>
+                  <span class="selectText tokenValue" >0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+    <nav class="navbar navbar-expand-md fixed-top ">
+     <a class="navbar-brand" href="index.html" id="mainLogo"><img src="assets/nav-logo.png"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="assets/sideMenu.png" style="height:35px;"/></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarsExampleDefault" style="background-color: rgb(23,23,25);">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Trade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders.html">Orders</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="account.html">Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="docs.html">Docs</a>
+          </li>
+          
+          
+        </ul>
+        
+      </div>
+
+      <div class="" >
+        <ul class="navbar-nav" style="padding-top: 10px;">
+          <li class="nav-item active  account-bar"  id="accountView" style="display:none;">
+            <button type="button" class="btn btn-primary navButton" id="accountButton">0x1F12....D8</button>
+          </li>
+          <li class="nav-item  account-bar" id="connectWalletView"  style="display:none;">
+            <button type="button" class="btn btn-primary navButton2" id="connectMetamaskButton">Connect to a wallet</button>
+          </li>
+
+          
+        </ul>
+        
+      </div>
+    </nav>
+
+    <main role="main" class="container order">
+      <div id="connectWalletView2" style="display:none;">
+        <div class="row justify-content-center m0">
+          <h5 class="orderRowTitle m0">You should connect your wallet.</h5>
+        </div>
+        <div class="row justify-content-center mb20">
+          <button type="button" class="btn btn-primary accountAddressButton"  style="width: 200px;" id="connectMetamaskButton2">Connect to a wallet</button>
+        </div>
+      </div>
+
+      <div id="noAccountView" style="display:none;">
+        <div class="row justify-content-center m0">
+          <h5 class="orderRowTitle m0">You don't have any account created.</h5>
+        </div>
+        <div class="row justify-content-center mb20">
+          <button type="button" class="btn btn-primary accountAddressButton"  style="width: 200px;" id="activateAccountButton">Create Account</button>
+        </div>
+      </div>
+      <div id="accountExistsView" style="display:none;">
+        <div class="row justify-content-center m0">
+          <h5 class="orderRowTitle m0">ACCOUNT BALANCE</h5> 
+
+        </div>
+        <div class="row mb20">
+          <table class="accountTable">
+              <thead>
+                <th>Asset</th>
+                <th>Balance</th>
+                <th></th>
+                <th></th>
+              </thead>
+              <tbody id="accountTable">
+                
+                
+              </tbody>
+            </table>
+        </div>
+        <div class="row mt20">
+          <span class="boxText1">Don't see a token you own? <a href="javascript: importToken();" >Import It</a></span>
+        </div>
+        <div class="row ">
+          <span class="boxText1" id="explorerLink">You could explore your account's smart contract on <a href="javascript: ;" >Avalanche Explorer</a></span>
+        </div>
+      </div>
+
+      
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/dist/web3.min.js"></script>
+     <script src="js/loader.js" ></script>
+    <script src="js/tokenlist.js" ></script>
+    <script src="js/createAccountContract.js" ></script>
+    <script src="js/algorderAccountContract.js" ></script>
+    <script src="js/algorderContract.js" ></script>
+
+    <script src="js/wallet.js" ></script>
+    <script src="js/account.js" ></script>
+
+
+    <div class="modal fade bd-example-modal-lg" data-backdrop="static" data-keyboard="false" tabindex="-1" id="loader">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content" style="width: 48px">
+            <span class="fa fa-spinner fa-spin fa-3x" style="color:rgb(255, 189, 0)"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
